@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // A ideia é criar uma simulação de um jogo entre 2 jogadores, onde cada jogador terá uma carta representando diferentes cidades com diferentes atributos.
+// Esse codigo baseia-se no nivel novato do desafio.
 
 int main() {
 
