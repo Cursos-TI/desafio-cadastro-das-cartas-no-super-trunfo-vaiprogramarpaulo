@@ -65,7 +65,7 @@ int main() {
 
     // = Jogador 2 =
     printf("\nAgora e a vez do Jogador 2! \n\n");
-    printf("- Voce selecionou o Jogador 2. \n");
+    printf("\n- Voce selecionou o Jogador 2. \n");
     printf("O codigo da sua carta e 202!\n\n"); //Esse codigo sera ficticio, pois nao sera utilizado no jogo.
     
     printf("Digite a sigla do Estado: ");
