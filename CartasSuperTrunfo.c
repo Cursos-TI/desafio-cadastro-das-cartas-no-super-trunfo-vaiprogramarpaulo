@@ -8,6 +8,7 @@ int main() {
     char resposta; 
 
     // Jogador 1
+    char siglaEstado1[3]; //Sigla do Estado (2 letras + '\0')
     int populacao1;
     float area1;
     float pib1;
@@ -15,6 +16,7 @@ int main() {
     char nomeCidade1[50];
 
     // Jogador 2
+    char siglaEstado2[3]; //Sigla do Estado (2 letras + '\0')
     int populacao2;
     float area2;
     float pib2;
@@ -24,13 +26,15 @@ int main() {
 // Por motivos de erros e mais erros, optei por definir duas versoes diferentes de variaveis para cada jogador e foi dessa forma que consegui fazer o programa funcionar. :)
 
     // = Jogador 1 =
-    printf("Seja bem-vindo ao Super Trunfo Paises! \n\n");
+    printf("= Seja bem-vindo ao Super Trunfo Paises! = \n\n");
 
-    printf("Para iniciarmos, vamos criar a sua carta! \n\n");
+    printf("Para iniciar, vamos criar a sua carta! \n\n");
     printf("- Voce selecionou o Jogador 1. \n");
-    printf("- Voce selecionou o Estado FORTALEZA.\n");
-    printf("O codigo da sua carta sera F01!\n\n"); //Esse codigo sera ficticio, pois nao sera utilizado no jogo.
+    printf("O codigo da sua carta e 101!\n\n"); //Esse codigo sera ficticio, pois nao sera utilizado no jogo.
     
+    printf("Digite a sigla do Estado: ");
+    scanf("%s", siglaEstado1);
+
     printf("Digite o nome da cidade (sem espacos): ");
     scanf("%s", nomeCidade1);
 
@@ -46,8 +50,11 @@ int main() {
     printf("Digite o numero de pontos turisticos da sua cidade: ");
     scanf("%d", &pontosturisticos1);
 
-    printf("\nMuito bem Jogador 1, esta e a sua carta:\n");
-    printf("Codigo da Carta: F01 - Nome da Cidade: %s\n", nomeCidade1);
+    //Carta do Jogador 1
+    printf("\n > Muito bem Jogador 1, esta e a sua carta:\n");
+    printf("Codigo da Carta: 101\n");
+    printf("Nome da Cidade: %s\n", nomeCidade1);
+    printf("Estado: %s\n", siglaEstado1);
     printf("Populacao: %d\n", populacao1);
     printf("Area: %.2f\n", area1);
     printf("PIB: %.2f\n", pib1);
@@ -60,9 +67,11 @@ int main() {
     printf("\nAgora e a vez do Jogador 2! \n");
 
     printf("- Voce selecionou o Jogador 2. \n");
-    printf("- Voce selecionou o Estado SERGIPE.\n");
-    printf("O codigo da sua carta sera S02!\n\n"); //Esse codigo sera ficticio, pois nao sera utilizado no jogo.
+    printf("O codigo da sua carta e 202!\n\n"); //Esse codigo sera ficticio, pois nao sera utilizado no jogo.
     
+    printf("Digite a sigla do Estado: ");
+    scanf("%s", siglaEstado2);
+
     printf("Digite o nome da cidade (sem espacos): ");
     scanf("%s", nomeCidade2);
 
@@ -78,14 +87,17 @@ int main() {
     printf("Digite o numero de pontos turisticos da sua cidade: ");
     scanf("%d", &pontosturisticos2);
 
-    printf("\nMuito bem Jogador 2, esta e a sua carta:\n");
-    printf("Codigo da Carta: S02 - Nome da Cidade: %s\n", nomeCidade2);
+    //Carta do Jogador 2
+    printf("\n > Muito bem Jogador 2, esta e a sua carta:\n");
+    printf("Codigo da Carta: 202\n");
+    printf("Nome da Cidade: %s\n", nomeCidade2);
+    printf("Estado: %s\n", siglaEstado2);
     printf("Populacao: %d\n", populacao2);
     printf("Area: %.2f\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos Turisticos: %d\n", pontosturisticos2);
     
-    printf("\nEsse foi o jogo. Muito obrigado por jogarem! \n");
+    printf("\n\nEsse foi o jogo. Muito obrigado por jogar! :) \n");
 
     return 0;
 }
