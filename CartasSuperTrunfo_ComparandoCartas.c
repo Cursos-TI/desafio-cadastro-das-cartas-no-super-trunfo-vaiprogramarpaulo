@@ -9,11 +9,15 @@ int main() {
 
     // Jogador 1
     char siglaEstado1[3]; //Sigla do Estado (2 letras + '\0')
+    codigodacarta1[4]; //Codigo da Carta (3 digitos + '\0')
+    char nomeCidade1[50];
     int populacao1;
     float area1;
     float pib1;
     int pontosturisticos1;
-    char nomeCidade1[50];
+    
+    int densidadepopulacional1 = populacao1 / area1; //Densidade Populacional = Populacao / Area
+    float pibpercapita1 = pib1 / populacao1; //PIB per
 
     // Jogador 2
     char siglaEstado2[3]; //Sigla do Estado (2 letras + '\0')
@@ -22,6 +26,9 @@ int main() {
     float pib2;
     int pontosturisticos2;
     char nomeCidade2[50];
+
+    int densidadepopulacional2;
+    float pibpercapita2;
     
 // Por motivos de erros e mais erros, optei por definir duas versoes diferentes de variaveis para cada jogador e foi dessa forma que consegui fazer o programa funcionar. :)
 
@@ -38,10 +45,10 @@ int main() {
     printf("Digite o nome da cidade (sem espacos): ");
     scanf("%s", nomeCidade1);
 
-    printf("Digite a populacao da sua cidade: ");
+    printf("Digite a populacao da sua cidade (mil): ");
     scanf("%d", &populacao1);
 
-    printf("Digite a area da sua cidade: ");
+    printf("Digite a area da sua cidade (km²): ");
     scanf("%f", &area1);
 
     printf("Digite o PIB da sua cidade: ");
@@ -62,6 +69,12 @@ int main() {
 
     printf("\n\nGostaria de avancar? (s/n): ");
     scanf(" %c", &resposta);
+    if(resposta == 'n') {
+        printf("O jogo foi encerrado. Ate a proxima! \n");
+        return 0;
+    } else {resposta == 's') {
+        printf("Vamos la! \n");
+    }
 
     // = Jogador 2 =
     printf("\nAgora e a vez do Jogador 2! \n\n");
@@ -74,10 +87,10 @@ int main() {
     printf("Digite o nome da cidade (sem espacos): ");
     scanf("%s", nomeCidade2);
 
-    printf("Digite a populacao da sua cidade: ");
+    printf("Digite a populacao da sua cidade (mil): ");
     scanf("%d", &populacao2);
 
-    printf("Digite a area da sua cidade: ");
+    printf("Digite a area da sua cidade (km²): ");
     scanf("%f", &area2);
 
     printf("Digite o PIB da sua cidade: ");
@@ -96,7 +109,15 @@ int main() {
     printf("PIB: %.2f\n", pib2);
     printf("Pontos Turisticos: %d\n", pontosturisticos2);
     
-    printf("\n\nEsse foi o jogo. Muito obrigado por jogar! :) \n");
+    printf("\n\nAgora vamos aos resultados! \n\n");
+
+    if(pib1 > pib2) {
+        printf("O Jogador 1 venceu! \n");
+    } else if (pib2 > pib1) {
+        printf("O Jogador 2 venceu! \n");
+    } else 
+    }
+    }
 
     return 0;
 }
