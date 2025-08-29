@@ -8,34 +8,28 @@ int main() {
     char resposta; 
 
     // Jogador 1
-    char nomeEstado1[3]; //Sigla do Estado (2 letras + '\0')
+    char nomeEstado1[50], nomeCidade1[50]; //Nome do Estado e da Cidade
     char codigoCarta1[4]; //Codigo da Carta (3 numeros + '\0')                  
-    char nomeCidade1[50];
-    int populacao1;
-    float area1;
-    float pib1;
-    int pontosturisticos1;
+    int populacao1, pontosturisticos1;
+    float area1, pib1, densidadepopulacional1, pibpercapita1;
 
-    float densidadepopulacional1 = populacao1 / area1; //Densidade Populacional = Populacao / Area
-    float pibpercapita1 = pib1 / populacao1; //PIB per capita = PIB / Populacao
+    densidadepopulacional1 = populacao1 / area1; //Densidade Populacional = Populacao / Area
+    pibpercapita1 = pib1 / populacao1; //PIB per capita = PIB / Populacao
 
     // Jogador 2
-     char nomeEstado2[3]; //Sigla do Estado (2 letras + '\0')
-    char codigodacarta2[4]; //Codigo da Carta (3 numeros + '\0')                  
-    char nomeCidade2[50];
-    int populacao2;
-    float area2;
-    float pib2;
-    int pontosturisticos2;
+    char nomeEstado2[50], nomeCidade2[50]; //Nome do Estado e da Cidade
+    char codigoCarta2[4]; //Codigo da Carta (3 numeros + '\0')                  
+    int populacao2, pontosturisticos2;
+    float area2, pib2, densidadepopulacional2, pibpercapita2;
 
-    float densidadepopulacional2 = populacao2 / area2; //Densidade Populacional = Populacao / Area
-    float pibpercapita2 = pib2 / populacao2; //PIB per capita = PIB / Populacao
+    densidadepopulacional2 = populacao2 / area2; //Densidade Populacional = Populacao / Area
+    pibpercapita2 = pib2 / populacao2; //PIB per capita = PIB / Populacao
     
-// Por motivos de erros e mais erros, optei por definir duas versoes diferentes de variaveis para cada jogador e foi dessa forma que consegui fazer o programa funcionar. :)
+// Definidas as variaveis, vamos iniciar o código do jogo:
 
     // = Jogador 1 =
     printf("= Seja bem-vindo ao Super Trunfo Paises! = \n\n");
-
+    
     printf("Para iniciar, vamos criar a sua carta! \n\n");
     printf("- Voce selecionou o Jogador 1. \n");
 
@@ -62,23 +56,23 @@ int main() {
 
     //Carta do Jogador 1
     printf("\n > Muito bem Jogador 1, esta e a sua carta:\n");
-    printf("Codigo da Carta: 101\n");
+    printf("Codigo da Carta: %i\n", codigoCarta1);
+    printf("Nome do Estado: %s\n", nomeEstado1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
-    printf("Estado: %s\n", siglaEstado1);
-    printf("Populacao: %d\n", populacao1);
-    printf("Area: %.2f\n", area1);
+    printf("Populacao: %d mil habitantes\n", populacao1);
+    printf("Area: %.2f\n km²", area1);
     printf("PIB: %.2f\n", pib1);
     printf("Pontos Turisticos: %d\n", pontosturisticos1);
 
     printf("\n\nGostaria de avancar? (s/n): ");
     scanf(" %c", &resposta);
-    if(resposta == 'n') {
+        if(resposta == 'n') {
         printf("O jogo foi encerrado. Ate a proxima! \n");
         return 0;
-    } else {resposta == 's') {
+        } else {
         printf("Vamos la! \n");
     }
-
+/*
     // = Jogador 2 =
     printf("\nAgora e a vez do Jogador 2! \n\n");
     printf("\n- Voce selecionou o Jogador 2. \n");
@@ -101,7 +95,7 @@ int main() {
 
     printf("Digite o numero de pontos turisticos da sua cidade: ");
     scanf("%d", &pontosturisticos2);
-
+*/
     //Carta do Jogador 2
     printf("\n > Muito bem Jogador 2, esta e a sua carta:\n");
     printf("Codigo da Carta: 202\n");
