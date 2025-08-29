@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/vinic/Documents/Projetos/desafio-cadastro-das-cartas-no-super-trunfo-vaiprogramarpaulo",
-      "program": "c:/Users/vinic/Documents/Projetos/desafio-cadastro-das-cartas-no-super-trunfo-vaiprogramarpaulo/build/Debug/outDebug",
+      "cwd": "c:/Users/vinic/Documents/Projetos/desafio-cadastro-das-cartas-no-super-trunfo-vaiprogramarpaulo/ComparandoCartas_Desafio2",
+      "program": "c:/Users/vinic/Documents/Projetos/desafio-cadastro-das-cartas-no-super-trunfo-vaiprogramarpaulo/ComparandoCartas_Desafio2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
