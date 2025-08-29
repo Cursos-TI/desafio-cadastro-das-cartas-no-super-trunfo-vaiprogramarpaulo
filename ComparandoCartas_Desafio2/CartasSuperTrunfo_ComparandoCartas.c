@@ -32,7 +32,7 @@ int main() {
     printf("Para iniciar, vamos criar a sua carta! \n\n");
     printf("- Voce selecionou o Jogador 1. \n"); 
 
-    printf("Digite o codigo da sua carta (3 numeros): ");
+    printf("Digite o coudigo da sua carta (3 numeros): ");
     scanf("%i", &codigoCarta1);
     
     printf("Digite o nome do Estado (sem espacos): ");
