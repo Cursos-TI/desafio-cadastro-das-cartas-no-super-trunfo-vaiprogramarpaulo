@@ -8,27 +8,28 @@ int main() {
     char resposta; 
 
     // Jogador 1
-    char siglaEstado1[3]; //Sigla do Estado (2 letras + '\0')
-    codigodacarta1[4]; //Codigo da Carta (3 digitos + '\0')
+    char nomeEstado1[3]; //Sigla do Estado (2 letras + '\0')
+    char codigoCarta1[4]; //Codigo da Carta (3 numeros + '\0')                  
     char nomeCidade1[50];
     int populacao1;
     float area1;
     float pib1;
     int pontosturisticos1;
-    
-    int densidadepopulacional1 = populacao1 / area1; //Densidade Populacional = Populacao / Area
-    float pibpercapita1 = pib1 / populacao1; //PIB per
+
+    float densidadepopulacional1 = populacao1 / area1; //Densidade Populacional = Populacao / Area
+    float pibpercapita1 = pib1 / populacao1; //PIB per capita = PIB / Populacao
 
     // Jogador 2
-    char siglaEstado2[3]; //Sigla do Estado (2 letras + '\0')
+     char nomeEstado2[3]; //Sigla do Estado (2 letras + '\0')
+    char codigodacarta2[4]; //Codigo da Carta (3 numeros + '\0')                  
+    char nomeCidade2[50];
     int populacao2;
     float area2;
     float pib2;
     int pontosturisticos2;
-    char nomeCidade2[50];
 
-    int densidadepopulacional2;
-    float pibpercapita2;
+    float densidadepopulacional2 = populacao2 / area2; //Densidade Populacional = Populacao / Area
+    float pibpercapita2 = pib2 / populacao2; //PIB per capita = PIB / Populacao
     
 // Por motivos de erros e mais erros, optei por definir duas versoes diferentes de variaveis para cada jogador e foi dessa forma que consegui fazer o programa funcionar. :)
 
@@ -37,10 +38,12 @@ int main() {
 
     printf("Para iniciar, vamos criar a sua carta! \n\n");
     printf("- Voce selecionou o Jogador 1. \n");
-    printf("O codigo da sua carta e 101!\n\n"); //Esse codigo sera ficticio, pois nao sera utilizado no jogo.
+
+    printf("Digite o código da sua carta (3 numeros): ");
+    scanf("%i", &codigoCarta1);
     
-    printf("Digite a sigla do Estado: ");
-    scanf("%s", siglaEstado1);
+    printf("Digite o nome do Estado (sem espacos): ");
+    scanf("%s", nomeEstado1);
 
     printf("Digite o nome da cidade (sem espacos): ");
     scanf("%s", nomeCidade1);
