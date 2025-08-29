@@ -7,30 +7,30 @@ int main() {
 
     char resposta; 
 
-    // Variaveis Jogador 1
-    char nomeEstado1[50], nomeCidade1[50]; //Nome do Estado e da Cidade
+// Variaveis Jogador 1
+    char nomeEstado1[50], nomeCidade1[50]; 
     char codigoCarta1[4]; //Codigo da Carta (3 numeros + '\0')                  
     int populacao1, pontosturisticos1;
    float area1, pib1, densidadepopulacional1, pibpercapita1;
 
-    densidadepopulacional1 = populacao1 / area1;
-    pibpercapita1 = pib1 / populacao1; 
+    densidadepopulacional1 = (float)populacao1 / area1;
+    pibpercapita1 = (float)pib1 / populacao1; 
 
-    // Variaveis Jogador 2
-    char nomeEstado2[50], nomeCidade2[50]; //Nome do Estado e da Cidade
+// Variaveis Jogador 2
+    char nomeEstado2[50], nomeCidade2[50]; 
     char codigoCarta2[4]; //Codigo da Carta (3 numeros + '\0')                  
     int populacao2, pontosturisticos2;
     float area2, pib2, densidadepopulacional2, pibpercapita2;
 
-    densidadepopulacional2 = populacao2 / area2; 
-    pibpercapita2 = pib2 / populacao2; 
-    
+    densidadepopulacional2 = (float)populacao2 / area2; 
+    pibpercapita2 = (float)pib2 / populacao2; 
+
 // Definidas as variaveis, vamos iniciar o código do jogo:
 
     printf("= Seja bem-vindo ao Super Trunfo Paises! = \n\n");
-    
+// Criacao da carta do Jogador 1
     printf("Para iniciar, vamos criar a sua carta! \n\n");
-    printf("- Voce selecionou o Jogador 1. \n"); // Criacao da carta do Jogador 1
+    printf("- Voce selecionou o Jogador 1. \n"); 
 
     printf("Digite o código da sua carta (3 numeros): ");
     scanf("%i", &codigoCarta1);
@@ -73,9 +73,9 @@ int main() {
         } else {
         printf("Vamos la! \n");
     }
-
+// Criacao da carta do Jogador 2
     printf("\nAgora e a vez do Jogador 2! \n\n");
-    printf("\n- Voce selecionou o Jogador 2. \n"); // Criacao da carta do Jogador 2
+    printf("\n- Voce selecionou o Jogador 2. \n");
 
     printf("Digite o código da sua carta (3 numeros): ");
     scanf("%i", &codigoCarta2);
