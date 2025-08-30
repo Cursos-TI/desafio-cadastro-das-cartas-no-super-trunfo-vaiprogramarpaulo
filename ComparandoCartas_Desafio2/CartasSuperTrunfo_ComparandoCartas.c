@@ -21,10 +21,10 @@ int main() {
 
 // Definidas as variaveis, vamos iniciar o código do jogo:
 
-    /*printf("= Seja bem-vindo ao Super Trunfo Paises! = \n\n");
+    printf("= Seja bem-vindo ao Super Trunfo Paises! = \n\n");
 // Criacao da carta do Jogador 1
     printf("Para iniciar, vamos criar a sua carta! \n\n");
-    printf("- Voce selecionou o Jogador 1. \n"); */
+    printf("- Voce selecionou o Jogador 1. \n"); 
 
     printf("Digite o codigo da sua carta (3 numeros): ");
     scanf("%3s", codigoCarta1);
@@ -52,7 +52,7 @@ int main() {
 
     //Carta do Jogador 1
     printf("\n > Muito bem Jogador 1, esta e a sua carta:\n");
-    printf("Codigo da Carta: %s\n", codigoCarta1);
+    printf("Codigo da Carta: %s\n", (char *)codigoCarta1);
     printf("Nome do Estado: %s\n", nomeEstado1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("Populacao: %d habitantes\n", populacao1);
@@ -68,7 +68,7 @@ int main() {
         printf("O jogo foi encerrado. Ate a proxima! \n");
         return 0;
         } else {
-        printf("Vamos la! \n");
+        printf("\nVamos la! \n");
     }
 // Criacao da carta do Jogador 2
     printf("\nAgora e a vez do Jogador 2! \n\n");
@@ -111,7 +111,7 @@ int main() {
     printf("\nDensidade Populacional: %.2f\n", densidadepopulacional2);
     printf("PIB per Capita: %.2f\n", pibpercapita2);
 
-    printf("\n\nAgora vamos a comparação de cartas segundo o atributo PIB: \n\n");
+    printf("\n\nAgora vamos a comparacao de cartas segundo o atributo PIB: \n\n");
     printf("Jogador 1 - Codigo da Carta: %s - PIB: %.2f\n", codigoCarta1, pib1);
     printf("Jogador 2 - Codigo da Carta: %s - PIB: %.2f\n", codigoCarta2, pib2);
     if(pib1 > pib2) {
